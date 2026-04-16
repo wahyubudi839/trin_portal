@@ -1,3 +1,5 @@
+# file sementara editor
 *.swp
+.*.swp
 *.tmp
 *~
