@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-teal-500 flex flex-col items-center justify-center h-screen text-white">
+    <h1 class="text-4xl mb-4 font-bold">Simple Timer</h1>
+    <div class="text-6xl font-mono mb-6" id="display">00:10</div>
+    <button onclick="startTimer()" class="bg-white text-teal-600 px-8 py-2 rounded-full font-bold">Mulai 10 Detik</button>
+    <a href="index.html" class="mt-8 text-white underline"> Kembali ke Portal</a>
+    <script>
+        function startTimer() {
+            let t = 10;
+            const d = document.getElementById('display');
+            const interval = setInterval(() => {
+                t--;
+                d.innerText = "00:" + (t < 10 ? "0"+t : t);
+                if(t <= 0) { clearInterval(interval); alert("Waktu Habis!"); }
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
