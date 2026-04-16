@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trin Portal - 6 Apps</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #f8faff; font-family: sans-serif; }
+        .card { transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-6">
+
+    <h1 class="text-5xl font-bold text-blue-600 mb-4">Trin Portal</h1>
+    <p class="text-gray-600 text-lg text-center max-w-2xl mb-10">Dashboard Layanan Terintegrasi</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
+        <a href="http://172.16.67.180:3001" target="_blank" class="card bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <h2 class="text-xl font-bold text-blue-500 mb-2">Trin Monitor</h2>
+            <p class="text-gray-500 text-sm">Status uptime layanan real-time.</p>
+        </a>
+
+        <a href="http://172.16.67.180:8082" target="_blank" class="card bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <h2 class="text-xl font-bold text-green-500 mb-2">Trin Panel</h2>
+            <p class="text-gray-500 text-sm">Pengaturan web dan domain.</p>
+        </a>
+
+        <a href="http://172.16.67.180:8080" target="_blank" class="card bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <h2 class="text-xl font-bold text-purple-500 mb-2">Trin Files</h2>
+            <p class="text-gray-500 text-sm">Akses penyimpanan file digital.</p>
+        </a>
+
+        <a href="kalkulator.html" class="card bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <h2 class="text-xl font-bold text-orange-500 mb-2">Kalkulator</h2>
+            <p class="text-gray-500 text-sm">Alat hitung cepat sederhana.</p>
+        </a>
+
+        <a href="makanan.html" class="card bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <h2 class="text-xl font-bold text-red-500 mb-2">Pesan Makanan</h2>
+            <p class="text-gray-500 text-sm">Sistem order kantin digital.</p>
+        </a>
+
+        <a href="timer.html" class="card bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <h2 class="text-xl font-bold text-teal-500 mb-2">Simple Timer</h2>
+            <p class="text-gray-500 text-sm">Penghitung waktu mundur.</p>
+        </a>
+    </div>
+</body>
+</html>
